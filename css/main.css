@@ -1778,6 +1778,13 @@ pre .javascript .function {
 .rtl.post-title {
   font-family: UKIJ Ekran;
 }
+#.post-body p a {
+  color: #345;
+  border-bottom: none;
+}
+#.post-body p a:hover {
+  color: #f00;
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1861,6 +1868,15 @@ pre .javascript .function {
   max-width: 96px;
   height: auto;
   border: 2px solid #333;
+  border-radius: 50%;
+  transition: 2s all;
+}
+.site-author-image:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1942,7 +1958,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1dff29;
+  background: #4ebeff;
 }
 .links-of-blogroll {
   font-size: 13px;
