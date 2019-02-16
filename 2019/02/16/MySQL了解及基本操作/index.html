@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="MySQL 数据库,">
 
 
 
@@ -79,13 +79,24 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="xwtongxue">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="一、前言本站所讲的MySQL均为基于DOS环境下的常用基础操作。MySQL常与数据库同时出现，在了解MySQL之前，我们先要了解一下数据库。数据库：通过DBMS（数据库管理系统）创建和操纵的容器MySQL：一种DBMS  MySQL里面有很多数据库，那么数据是直接存在数据库里的吗？并不，数据库底下还有一个叫做数据表的存储单元，数据表里面才存储数据。打个比方，好比一座大图书馆，就是MySQL，图书馆">
+<meta name="keywords" content="MySQL 数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL了解及基本命令操作">
+<meta property="og:url" content="http://yoursite.com/2019/02/16/MySQL了解及基本操作/index.html">
 <meta property="og:site_name" content="xwtongxue">
+<meta property="og:description" content="一、前言本站所讲的MySQL均为基于DOS环境下的常用基础操作。MySQL常与数据库同时出现，在了解MySQL之前，我们先要了解一下数据库。数据库：通过DBMS（数据库管理系统）创建和操纵的容器MySQL：一种DBMS  MySQL里面有很多数据库，那么数据是直接存在数据库里的吗？并不，数据库底下还有一个叫做数据表的存储单元，数据表里面才存储数据。打个比方，好比一座大图书馆，就是MySQL，图书馆">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/img/2.2.1.png">
+<meta property="og:image" content="http://yoursite.com/img/2.4.1.png">
+<meta property="og:image" content="http://yoursite.com/img/2.4.2.png">
+<meta property="og:image" content="http://yoursite.com/img/2.4.3.png">
+<meta property="og:image" content="http://yoursite.com/img/2.4.4.png">
+<meta property="og:updated_time" content="2019-02-16T14:59:39.705Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xwtongxue">
+<meta name="twitter:title" content="MySQL了解及基本命令操作">
+<meta name="twitter:description" content="一、前言本站所讲的MySQL均为基于DOS环境下的常用基础操作。MySQL常与数据库同时出现，在了解MySQL之前，我们先要了解一下数据库。数据库：通过DBMS（数据库管理系统）创建和操纵的容器MySQL：一种DBMS  MySQL里面有很多数据库，那么数据是直接存在数据库里的吗？并不，数据库底下还有一个叫做数据表的存储单元，数据表里面才存储数据。打个比方，好比一座大图书馆，就是MySQL，图书馆">
+<meta name="twitter:image" content="http://yoursite.com/img/2.2.1.png">
 
 
 
@@ -115,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/16/MySQL了解及基本操作/">
 
 
 
 
 
-  <title>归档 | xwtongxue</title>
+  <title>MySQL了解及基本命令操作 | xwtongxue</title>
   
 
 
@@ -140,7 +151,7 @@
     
   
 
-  <div class="container sidebar-position-right page-archive">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -276,142 +287,276 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/16/MySQL了解及基本操作/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xwtongxue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xwtongxue">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">MySQL了解及基本命令操作</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-16T21:21:41+08:00">
+                2019-02-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/16/MySQL了解及基本操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/16/MySQL了解及基本操作/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2019/02/16/MySQL了解及基本操作/" class="leancloud_visitors" data-flag-title="MySQL了解及基本命令操作">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/16/MySQL了解及基本操作/" itemprop="url">
+          
+
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">MySQL了解及基本命令操作</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  796
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-16T21:21:41+08:00" content="2019-02-16">
-          02-16
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/15/前言/" itemprop="url">
-              
-                <span itemprop="name">前言</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-15T14:57:27+08:00" content="2019-02-15">
-          02-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/13/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-13T16:34:00+08:00" content="2019-02-13">
-          02-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><p>本站所讲的MySQL均为基于<strong>DOS环境</strong>下的常用基础操作。<br>MySQL常与数据库同时出现，在了解MySQL之前，我们先要了解一下数据库。<br><strong>数据库</strong>：通过DBMS（数据库管理系统）创建和操纵的容器<br><strong>MySQL</strong>：一种DBMS</p>
+<blockquote>
+<p>MySQL里面有很多数据库，那么数据是直接存在数据库里的吗？并不，数据库底下还有一个叫做数据表的存储单元，数据表里面才存储数据。打个比方，好比一座大图书馆，就是MySQL，图书馆里面分南库，北库，这就是数据库，每个库里面的书都是放在书架上的，书架就是数据表，而放在书架上的很多本书，就是数据。所以按大小顺序排个序就应该是: <strong>MySQL&gt;数据库&gt;数据表&gt;数据</strong></p>
+</blockquote>
+<p>其实，数据库究竟是什么并不重要，因为我们不直接访问数据库，而是使用DBMS（此处指MySQL），它替我们访问数据库。</p>
+<h1 id="二、MySQL的登录-退出"><a href="#二、MySQL的登录-退出" class="headerlink" title="二、MySQL的登录+退出"></a>二、MySQL的登录+退出</h1><h2 id="1-登录MySQL"><a href="#1-登录MySQL" class="headerlink" title="1. 登录MySQL"></a>1. 登录MySQL</h2><p>在登录MySQL之前，我们先要了解几个参数的意义<br><img src="/img/2.2.1.png" alt="2.2.1"><br>我们在登录时，可输入：<br><code>mysql -h127.0.0.1 -uroot -p</code><br>回车后输入密码即可登录。</p>
+<h2 id="2-修改用户密码"><a href="#2-修改用户密码" class="headerlink" title="2. 修改用户密码"></a>2. 修改用户密码</h2><p>既然提到了登录密码，就来讲一下如何修改密码，mysqladmin命令用于修改用户密码：<br><code>mysqladmin -uroot -p原密码 password</code><br>按命令给出新密码即可。</p>
+<h2 id="3-退出MySQL"><a href="#3-退出MySQL" class="headerlink" title="3. 退出MySQL"></a>3. 退出MySQL</h2><p>输入：exit或quit或\q</p>
+<h2 id="4-MySQL的启动-停止"><a href="#4-MySQL的启动-停止" class="headerlink" title="4. MySQL的启动+停止"></a>4. MySQL的启动+停止</h2><p>登录MySQL后可用以下命令控制MySQL<br>启动：<code>net start mysql</code><br>停止：<code>net stop mysql</code></p>
+<h1 id="三、MySQL的常用命令"><a href="#三、MySQL的常用命令" class="headerlink" title="三、MySQL的常用命令"></a>三、MySQL的常用命令</h1><p>在SQL语句中，我们常以 ; 来结束一条语句，且必须是英文形式</p>
+<h2 id="1-显示数据库"><a href="#1-显示数据库" class="headerlink" title="1. 显示数据库"></a>1. 显示数据库</h2><p><code>show databases;</code></p>
+<blockquote>
+<p>Information_schema：数据库的原数据信息，数据库名字，字段名等<br>Mysql：用户信息 权限等<br>Performance_schema 数据库服务器的一些性能参数<br>Sys：系统的运行信息</p>
+</blockquote>
+<h2 id="2-使用数据库"><a href="#2-使用数据库" class="headerlink" title="2. 使用数据库"></a>2. 使用数据库</h2><p><code>use 数据库名称;</code><br>必须先使用use打开数据库，才能读取其中的数据。</p>
+<h2 id="3-select命令"><a href="#3-select命令" class="headerlink" title="3. select命令"></a>3. select命令</h2><ul>
+<li>显示当前连接的数据库<code>select databases();</code></li>
+<li>显示当前服务器版本<code>select version();</code></li>
+<li>显示当前日期时间<code>select now();</code></li>
+<li>显示当前用户<code>select user;</code></li>
+</ul>
+<h2 id="4-创建数据库"><a href="#4-创建数据库" class="headerlink" title="4. 创建数据库"></a>4. 创建数据库</h2><p><code>create database 数据库名称;</code></p>
+<h2 id="5-删除数据库"><a href="#5-删除数据库" class="headerlink" title="5. 删除数据库"></a>5. 删除数据库</h2><p><code>drop database 数据库名称;</code></p>
+<h1 id="四、数据类型"><a href="#四、数据类型" class="headerlink" title="四、数据类型"></a>四、数据类型</h1><h2 id="1-整型"><a href="#1-整型" class="headerlink" title="1. 整型"></a>1. 整型</h2><p><img src="/img/2.4.1.png" alt="2.4.1"><br>存储范围越大 所占字节越多 适当选取</p>
+<h2 id="2-浮点数类型和定点数类型"><a href="#2-浮点数类型和定点数类型" class="headerlink" title="2. 浮点数类型和定点数类型"></a>2. 浮点数类型和定点数类型</h2><p><img src="/img/2.4.2.png" alt="2.4.2"></p>
+<h2 id="3-日期时间型"><a href="#3-日期时间型" class="headerlink" title="3. 日期时间型"></a>3. 日期时间型</h2><p><img src="/img/2.4.3.png" alt="2.4.3"><br>Timestamp时间范围小于datetime</p>
+<h2 id="4-字符串型"><a href="#4-字符串型" class="headerlink" title="4. 字符串型"></a>4. 字符串型</h2><p>字符串是由数字、字母、下划线组成的一串字符<br>字符串：用’’限定<br>数值列：不用<br>eg：’123’+’123’=’123123’ 字符串拼接<br>     123+123=246 数值加减<br><img src="/img/2.4.4.png" alt="2.4.4"><br>Char（M）定长<br>Varchar（M）变长 一个字节存储一个汉字<br>Text 文本<br>Enum：枚举<br>Set：组<br>int 整型<br>tinyint 整型（0-256）<br>decimal 浮点型（总位数，小数位数） 例如 decimal(3,1)<br>char(X) 定长字符型 例如 char(10)<br>varchar(X) 可变长度字符型 例如varchar（10）<br>text 大段文本<br>binary 二进制（存储照片等）</p>
 
       
-
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>欢迎打我！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="xwtongxue 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="xwtongxue 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL-数据库/" rel="tag"># MySQL 数据库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/15/前言/" rel="next" title="前言">
+                <i class="fa fa-chevron-left"></i> 前言
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -419,6 +564,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -439,8 +591,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -512,6 +673,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、前言"><span class="nav-number">1.</span> <span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、MySQL的登录-退出"><span class="nav-number">2.</span> <span class="nav-text">二、MySQL的登录+退出</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-登录MySQL"><span class="nav-number">2.1.</span> <span class="nav-text">1. 登录MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-修改用户密码"><span class="nav-number">2.2.</span> <span class="nav-text">2. 修改用户密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-退出MySQL"><span class="nav-number">2.3.</span> <span class="nav-text">3. 退出MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-MySQL的启动-停止"><span class="nav-number">2.4.</span> <span class="nav-text">4. MySQL的启动+停止</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、MySQL的常用命令"><span class="nav-number">3.</span> <span class="nav-text">三、MySQL的常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-显示数据库"><span class="nav-number">3.1.</span> <span class="nav-text">1. 显示数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-使用数据库"><span class="nav-number">3.2.</span> <span class="nav-text">2. 使用数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-select命令"><span class="nav-number">3.3.</span> <span class="nav-text">3. select命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-创建数据库"><span class="nav-number">3.4.</span> <span class="nav-text">4. 创建数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-删除数据库"><span class="nav-number">3.5.</span> <span class="nav-text">5. 删除数据库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、数据类型"><span class="nav-number">4.</span> <span class="nav-text">四、数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-整型"><span class="nav-number">4.1.</span> <span class="nav-text">1. 整型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-浮点数类型和定点数类型"><span class="nav-number">4.2.</span> <span class="nav-text">2. 浮点数类型和定点数类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-日期时间型"><span class="nav-number">4.3.</span> <span class="nav-text">3. 日期时间型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-字符串型"><span class="nav-number">4.4.</span> <span class="nav-text">4. 字符串型</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -665,6 +842,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
