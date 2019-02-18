@@ -87,10 +87,15 @@
 <meta property="og:site_name" content="xwtongxue">
 <meta property="og:description" content="本站使用的是python3，python3的安装肥肠简单，一路next即可。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-17T15:01:05.035Z">
+<meta property="og:image" content="http://yoursite.com/img/p.1.1.png">
+<meta property="og:image" content="http://yoursite.com/img/p.1.2.png">
+<meta property="og:image" content="http://yoursite.com/img/p.1.3.png">
+<meta property="og:image" content="http://yoursite.com/img/p.1.4.png">
+<meta property="og:updated_time" content="2019-02-18T06:10:34.880Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初识Python">
 <meta name="twitter:description" content="本站使用的是python3，python3的安装肥肠简单，一路next即可。">
+<meta name="twitter:image" content="http://yoursite.com/img/p.1.1.png">
 
 
 
@@ -399,7 +404,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  933
+                  2k
                 </span>
               
 
@@ -415,7 +420,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  7
                 </span>
               
             </div>
@@ -468,9 +473,58 @@
 <blockquote>
 <p>为什么 &gt;&gt;&gt;print(‘I love fishc.com ‘ * 5) 可以正常执行，但 &gt;&gt;&gt;print(‘I love fishc.com ‘ + 5) 却报错？<br>在 Python 中不能把两个完全不同的东西加在一起，比如说数字和文本，正是这个原因，&gt;&gt;&gt;print(‘I love fishc.com ‘ + 5) 才会报错。这就像是在说“五只小甲鱼加上苍井空会是多少？”一样没有多大意义，结果可能是五，可能是六，也可能是八！不过乘以一个整数来翻倍就具有一定的意义了，前边的例子就是将 “I love fishc.com” 这个字符串打印五次。</p>
 </blockquote>
-<h1 id="四、小练习"><a href="#四、小练习" class="headerlink" title="四、小练习"></a>四、小练习</h1><p>1.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">print(&apos;------我是分割线-----&apos;)</span><br><span class="line">temp = input(&quot;猜一下我想的是什么数字&quot;)</span><br><span class="line">guess = int(temp)</span><br><span class="line">if guess == 8:</span><br><span class="line">    print(&quot;你真聪明！&quot;)</span><br><span class="line">    print(&quot;但也没有奖励&quot;)</span><br><span class="line">else:</span><br><span class="line">    print(&quot;猜错了辣鸡&quot;)</span><br><span class="line">print(&quot;886&quot;)</span><br></pre></td></tr></table></figure></p>
+<h1 id="四、小练习-1"><a href="#四、小练习-1" class="headerlink" title="四、小练习 1"></a>四、小练习 1</h1><p>1.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">print(&apos;------我是分割线-----&apos;)</span><br><span class="line">temp = input(&quot;猜一下我想的是什么数字&quot;)</span><br><span class="line">guess = int(temp)</span><br><span class="line">if guess == 8:</span><br><span class="line">    print(&quot;你真聪明！&quot;)</span><br><span class="line">    print(&quot;但也没有奖励&quot;)</span><br><span class="line">else:</span><br><span class="line">    print(&quot;猜错了辣鸡&quot;)</span><br><span class="line">print(&quot;886&quot;)</span><br></pre></td></tr></table></figure></p>
 <p>2.<br>编写程序：calc.py 要求用户输入1到100之间数字并判断，输入符合要求打印“你妹好漂亮”，不符合要求则打印“你大爷好丑”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">temp = input(&quot;请输入1到100之间的数字：&quot;)</span><br><span class="line">num = int(temp)</span><br><span class="line">if 1 &lt;= num &lt;= 100:</span><br><span class="line">    print(&apos;你妹好漂亮&apos;)</span><br><span class="line">else:</span><br><span class="line">    print(&apos;你大爷好丑&apos;)</span><br></pre></td></tr></table></figure></p>
 <p>以后会对以上的弱智小游戏进行改进，今天就到这啦！</p>
+<hr>
+<h1 id="五、变量"><a href="#五、变量" class="headerlink" title="五、变量"></a>五、变量</h1><ul>
+<li>变量名：<br>  a. 变量名就像我们的名字，把一个值赋值给一个名字时，Ta会存储在内存中，称之为变量（variable），在大多数语言中，把这种行为成为“给变量赋值”或“把值存储在变量中”。<br>  b. 而Python稍有不同，她并不是把值存储在变量中，而更像是把名字贴在值的上面。<br>  c. 所以有种说法是Python没有“变量”，只有“名字”。</li>
+<li>需要注意的地方：<br>  a. 使用变量之前，需要先对其赋值。<br>  b. 变量名可以包括字母、数字、下划线，但变量名不能以数字开头。<br>  c. 字母可大写可小写，但不同。<br>  d. 符号 = 是赋值的意思，从右往左赋，即左边是名字，右边是值。<br>  e. 尽量给变量取一个专业的名字：teacher =’xwtongxue’ 而不是t =’xwtongxue’</li>
+</ul>
+<h1 id="六、字符串"><a href="#六、字符串" class="headerlink" title="六、字符串"></a>六、字符串</h1><ul>
+<li>字符串也叫文本，用引号括起来</li>
+<li>字符串两边要加上成对的引号，单或双都可以，但不可一单一双</li>
+<li>要在字符串中出现单引号或双引号时：<br>  可用\对字符串中的引号进行转义，如<code>let\&#39;s go!</code><br>  或者用单引号或双引号来转化，如<code>i &quot;love&quot; u</code></li>
+<li>原始字符串<br><img src="/img/p.1.1.png" alt="p.1.1"></li>
+<li>长字符串：<br>若希望得到一个跨越多行的字符串，例如：<pre><code>你存在，
+我婶婶的脑海里，
+我的梦里
+我的心里
+呱唧呱呱呱呱呱呱
+我的歌声里。。。
+</code></pre>这里我们就要用到三重引号字符串。<br><img src="/img/p.1.2.png" alt="p.1.2"></li>
+</ul>
+<h1 id="七、游戏改进"><a href="#七、游戏改进" class="headerlink" title="七、游戏改进"></a>七、游戏改进</h1><ol>
+<li>在改进之前先了解一下Python的条件分支语法：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if 条件:</span><br><span class="line">	条件为真执行的操作</span><br><span class="line">else:</span><br><span class="line">	条件为假执行的操作</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>改进一：提示用户数字猜大了还是小了<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">print(&apos;------我是分割线-----&apos;)</span><br><span class="line">temp = input(&quot;猜一下我想的是什么数字&quot;)</span><br><span class="line">guess = int(temp)</span><br><span class="line">if guess == 8:</span><br><span class="line">    print(&quot;你真聪明！&quot;)</span><br><span class="line">    print(&quot;但也没有奖励&quot;)</span><br><span class="line">else:</span><br><span class="line">	if guess &gt; 8</span><br><span class="line">		print(&apos;哎呀大了大了！&apos;)</span><br><span class="line">	else:</span><br><span class="line">		print(&apos;小了小了！&apos;)</span><br><span class="line">print(&quot;886&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="2">
+<li><p>Python的while循环语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">while 条件:</span><br><span class="line">	条件为真执行的操作（循环体）</span><br></pre></td></tr></table></figure>
+<p> 比较操作符&gt;逻辑操作符 即&gt; 比and 先执行，若想改变顺序可用()改变。</p>
+</li>
+</ol>
+<ul>
+<li><p>改进二：每次运行程序产生的答案是随机的<br>我们需要引入：random模块，模块也就是我们所编写的，在按F5运行时即run module。<br>在random模块里有一个函数叫randint()，它会返回一个随机的整数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">secret = random.randint(1,10)</span><br><span class="line">print(&apos;------我是分割线-----&apos;)</span><br><span class="line">temp = input(&quot;猜一下我想的是什么数字&quot;)</span><br><span class="line">guess = int(temp)</span><br><span class="line">while guess != secret:</span><br><span class="line">	tem = input(&apos;错啦，请重新输入吧：&apos;)</span><br><span class="line">	guess = int(temp)</span><br><span class="line">	if guess == secret:</span><br><span class="line">    	print(&quot;你真聪明！&quot;)</span><br><span class="line">    	print(&quot;但也没有奖励&quot;)</span><br><span class="line">	else:</span><br><span class="line">		if guess &gt; secret</span><br><span class="line">			print(&apos;哎呀大了大了！&apos;)</span><br><span class="line">		else:</span><br><span class="line">			print(&apos;小了小了！&apos;)</span><br><span class="line">print(&quot;886&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>改进三：给用户三次猜的机会</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">times = 3</span><br><span class="line">secret = random.randint(1,10)</span><br><span class="line">print(&apos;------我是分割线-----&apos;)</span><br><span class="line"># 这里先给guess赋值（赋一个绝对不等于secret的值）</span><br><span class="line">guess = 0</span><br><span class="line"># print() 默认打印完字符串会自动添加一个换行符 ,end=&apos;&apos;参数告诉print()用空格代替换行，或任何&apos;&apos;中间的内容</span><br><span class="line">print(&quot;猜一下我想的是什么数字:&quot;,end=&apos; &apos;)</span><br><span class="line">while (guess != secret) and (times &gt; 0):</span><br><span class="line">	tem = input()</span><br><span class="line">	guess = int(temp)</span><br><span class="line">	times = times - 1 # 用户每输入一次，可用机会-1</span><br><span class="line">	if guess == secret:</span><br><span class="line">    	print(&quot;你真聪明！&quot;)</span><br><span class="line">    	print(&quot;但也没有奖励&quot;)</span><br><span class="line">	else:</span><br><span class="line">		if guess &gt; secret</span><br><span class="line">			print(&apos;哎呀大了大了！&apos;)</span><br><span class="line">		else:</span><br><span class="line">			print(&apos;小了小了！&apos;)</span><br><span class="line">		if times &gt; 0:</span><br><span class="line">			print(&apos;再试一次吧：&apos;,end=&apos; &apos;)</span><br><span class="line">		else:</span><br><span class="line">			print(&apos;机会用光啦！&apos;)</span><br><span class="line">print(&quot;886&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="八、小练习-2"><a href="#八、小练习-2" class="headerlink" title="八、小练习 2"></a>八、小练习 2</h1><ol>
+<li><p>尝试写代码实现以下功能：<br><img src="/img/p.1.3.png" alt="p.1.3"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">temp = input(&apos;请输入一个整数;&apos;)</span><br><span class="line">number = int(temp)</span><br><span class="line">i = 1</span><br><span class="line">while number:</span><br><span class="line">    print(i)</span><br><span class="line">    i = i+1</span><br><span class="line">    number = number - 1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>尝试写代码实现以下功能：<br><img src="/img/p.1.4.png" alt="p.1.4"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">temp = input(&apos;请输入一个整数：&apos;)</span><br><span class="line">number = int(temp)</span><br><span class="line">while number:</span><br><span class="line">    i = number - 1</span><br><span class="line">    while i:</span><br><span class="line">        print(&apos; &apos;,end=&apos;&apos;)</span><br><span class="line">        i = i-1</span><br><span class="line">    j = number</span><br><span class="line">    while j:</span><br><span class="line">        print(&apos;*&apos;,end = &apos;&apos;)</span><br><span class="line">        j = j-1</span><br><span class="line">    print()</span><br><span class="line">    number = number - 1</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Python近期就先到这里，MySQL更新完再来啦！</p>
 
       
     </div>
@@ -685,7 +739,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、什么是python"><span class="nav-number">1.</span> <span class="nav-text">一、什么是python</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、常用操作命令"><span class="nav-number">2.</span> <span class="nav-text">二、常用操作命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、拼接"><span class="nav-number">3.</span> <span class="nav-text">三、拼接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、小练习"><span class="nav-number">4.</span> <span class="nav-text">四、小练习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、什么是python"><span class="nav-number">1.</span> <span class="nav-text">一、什么是python</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、常用操作命令"><span class="nav-number">2.</span> <span class="nav-text">二、常用操作命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、拼接"><span class="nav-number">3.</span> <span class="nav-text">三、拼接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、小练习-1"><span class="nav-number">4.</span> <span class="nav-text">四、小练习 1</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、变量"><span class="nav-number">5.</span> <span class="nav-text">五、变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、字符串"><span class="nav-number">6.</span> <span class="nav-text">六、字符串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、游戏改进"><span class="nav-number">7.</span> <span class="nav-text">七、游戏改进</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、小练习-2"><span class="nav-number">8.</span> <span class="nav-text">八、小练习 2</span></a></li></ol></div>
             
 
           </div>
