@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MySQL约束]]></title>
+    <url>%2F2019%2F02%2F18%2FMySQL%E7%BA%A6%E6%9D%9F%2F</url>
+    <content type="text"><![CDATA[一、什么是约束约束是一种限制，它通过对表的行或列的数据做出限制，来确保表的数据的完整性、唯一性。 二、约束的类型1.非空约束空值：null 字段值可以为空非空：not null 字段值禁止为空 2.主键约束主键列的数据唯一，且不能为空，其值能够唯一区分表中每个行，列如用身份证号可以确定一个人；主键也可以是组合，例如家乡+门牌号可以确定一个人。 每个表都应有一个主键 不更新主键列中的值 不重用主键列中的值 不在主键列中使用可能会更改的值 3.唯一约束该列唯一，允许为空 唯一约束与主键约束的区别 一个表中可以有多个唯一约束，但只能有一个主键约束 主键列不能为空 唯一约束列可以 4.默认约束指定某列的默认值 5.外键约束 先建立父表再建立子表 cascade 三、约束语句总结红色字体是与黑色字体不同格式的语句。]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MySQL数据库表结构的操作]]></title>
     <url>%2F2019%2F02%2F18%2FMySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84%E7%9A%84%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[本讲是关于数据库表的结构的常用操作。 一、创建+查看数据库表 创建数据库表命令create table 表名(列名1 数据类型[列级别约束条件][默认值]列名2 数据类型[列级别约束条件][默认值]…..[表级别约束条件])use 数据库名(此处举例为book); 123456789use book;create table reader( card_id char(18), name varchar(10), sex enum(&apos;男&apos;,&apos;女&apos;), age int, tel char(11), balance decimal(7,3) ); 查看数据表 查看数据表有哪些：show tables from book; 查看数据表结构：desc reader; 查看创建数据表的详细结构语句：show create table reader 二、修改数据库表添加列的命令(在已存在的表添加新的列)：alter table 表名 add 新列名 数据类型 [约束条件][first|after已存在列名]注：add 是自动追加到已有列后面，若想指定列的位置 可用first|after 这个方法追加到某列后面。[ ]中间的都是可选项，可有可无。 添加列 12alter table reader add email varchar(30);desc reader; 添加有条件的列 afteralter table reader add email2 varchar(30) after tel; firstfirst是在所有列之前添加alter table reader add email3 varchar(30) first; 修改列名 123alter table 表名 change 旧列名 新列名 新数据类型；alter table reader change email2 email_bak varchar(30); 修改列的数据类型 123alter table 表名 modify 列名 数据类型alter table reader modify email varchar(25); 改变表中列的相对位置 123alter table 表名 modify 列1 数据类型 first|after 列2;alter table reader modify balance decimal(7,3) after email; 删除列 123alter table 表名 drop 列名;alter table reader drop email_bak; 修改表名 1234alter table 旧表名 rename 新表名alter table reader rename wmz;show tables; 删除数据库表 1drop table[if exists]表1，表2，表3，...表n; 三、表分区当我们创建的表，需要承载的数据量很大时，就要注意他的性能问题，比如图书信息表，有1000万个图书信息，那么就得考虑如何优化它，其中一种方式就是表分区。表分区就是把一张表的数据分成多个区块，这些区块可以再同一个磁盘上也可以在不同的磁盘上，但所有的数据还在一个表中。要想表分区，前提是你的数据库必须支持，输入:show plugins;若有partition active一行则可以。 数据库的表分区有两种形式： 水平：将表的数据按行分隔成不同的数据文件 垂直：将表的数据按列分隔成不同的数据文件eg（以水平分区为例）：]]></content>
