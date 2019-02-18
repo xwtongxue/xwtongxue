@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MySQL数据插入+自动编号]]></title>
+    <url>%2F2019%2F02%2F18%2FMySQL%E6%95%B0%E6%8D%AE%E6%8F%92%E5%85%A5%2B%E8%87%AA%E5%8A%A8%E7%BC%96%E5%8F%B7%2F</url>
+    <content type="text"><![CDATA[一、单表数据插入1.为表的所有列插入数据123insert into 表名(列名1，列名2....)values(value_list);insert into T_student(id,name,gender,hobbies)values(4,&apos;汪峰&apos;,1,&apos;当导师&apos;); 2.为表的指定列插入数据123insert into 表名(列名1，列名2....)values(value_list);insert into T_student(id,name,gender)values(4,&apos;汪峰&apos;,1); 3.同时插入多条记录123insert into 表名(列名1，列名2....)values(value1),(value2),...(valuen);insert into T_student(id,name,gender,hobbies)values(4,&apos;汪峰&apos;,1,&apos;当导师&apos;),(6,&apos;wmz&apos;,2,&apos;aaa&apos;); 4.将查询结果插入到表中insert into bookcategory select * from test where category_id&lt;3; insert和select中的列名不需要完全相同，事实上MySQL甚至不关心select返回的列名，它使用的是列的位置。且插入的数据结构必须一致，不然会因数据类型不同等而不能插入。 二、设置自动编号1.设置表的属性值自动增加语法格式：列名 数据类型 auto_increment auto_increment约束的字段可以是任何整数类型（tinyint，smallint，int等）。 2.为已有的表添加自增列alter table bookcategory modify category_id int auto_increment; 若想给有关联关系的表添加自动编号，则先去掉关联关系，设置完后再关联上。 3.修改自增列的起始值alter table bookcategory auto_increment=x; 修改后auto_increment列起始值从x开始。 4.去掉自增列alter table bookcategory modify category_id int;]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MySQL约束]]></title>
     <url>%2F2019%2F02%2F18%2FMySQL%E7%BA%A6%E6%9D%9F%2F</url>
-    <content type="text"><![CDATA[一、什么是约束约束是一种限制，它通过对表的行或列的数据做出限制，来确保表的数据的完整性、唯一性。 二、约束的类型1.非空约束空值：null 字段值可以为空非空：not null 字段值禁止为空 2.主键约束主键列的数据唯一，且不能为空，其值能够唯一区分表中每个行，列如用身份证号可以确定一个人；主键也可以是组合，例如家乡+门牌号可以确定一个人。 每个表都应有一个主键 不更新主键列中的值 不重用主键列中的值 不在主键列中使用可能会更改的值 3.唯一约束该列唯一，允许为空 唯一约束与主键约束的区别 一个表中可以有多个唯一约束，但只能有一个主键约束 主键列不能为空 唯一约束列可以 4.默认约束指定某列的默认值 5.外键约束 先建立父表再建立子表 cascade 三、约束语句总结红色字体是与黑色字体不同格式的语句。]]></content>
+    <content type="text"><![CDATA[一、什么是约束约束是一种限制，它通过对表的行或列的数据做出限制，来确保表的数据的完整性、唯一性。 二、约束的类型1.非空约束空值：null 字段值可以为空非空：not null 字段值禁止为空 2.主键约束主键列的数据唯一，且不能为空，其值能够唯一区分表中每个行，列如用身份证号可以确定一个人；主键也可以是组合，例如家乡+门牌号可以确定一个人。 每个表都应有一个主键 不更新主键列中的值 不重用主键列中的值 不在主键列中使用可能会更改的值 3.唯一约束该列唯一，允许为空 唯一约束与主键约束的区别： 一个表中可以有多个唯一约束，但只能有一个主键约束 主键列不能为空 唯一约束列可以 4.默认约束指定某列的默认值 5.外键约束 先建立父表再建立子表 cascade 删除表时，有关联的表先删子表再删父表，没有关联关系的可以一起删除。三、约束语句总结红色字体是与黑色字体不同格式的语句。]]></content>
       <categories>
         <category>MySQL</category>
       </categories>
