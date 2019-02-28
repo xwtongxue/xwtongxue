@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python的部分数值类型]]></title>
+    <url>%2F2019%2F02%2F28%2F%E5%9B%9E%E5%BD%92Python%2F</url>
+    <content type="text"><![CDATA[一、Python的一些数值类型1.整型：整数2.浮点型；小数 3.e记法：科学计数法 （肥肠大或者小的数） eg：0.000000000000000000000000000000006 = 6e-3315e10 = 150000000000.0 e=10 e10 = e的10次方 4.布尔类型：true = 1 false = 0 true + true = 2 true + false = 1 （知道就行，别乱用） 因为计算机只识别二进制数0 1 所以用0 1代表false true 二、类型转换 1.int() 整数注意： int()中不能有除了数字以外的东西 浮点型转化为整数时，对小数点后面的数采取截断，而不是四舍五入 2.float() 浮点数1234&gt;&gt;&gt;a = &apos;520&apos;&gt;&gt;&gt;b = float(a)&gt;&gt;&gt;b520.0 3.str() 字符串12345678a = 5.99b = str(a)b&apos;5.99&apos;c = str(5e19)c&apos;5e+19&apos;+号是变大，-号是变小，即10的正/负几次方 4.type() isinstance()用法：获得关于类型的信息建议使用isinstance，较直接，且type()会有别的用处 5.ps： temp = input(‘猜个数字:’) while type(temp)!=type(1): print(‘sorry 不合法’,end=’’) temp = input(‘请输入一个整数:’) 但是input()的返回值始终是字符串，所以type(temp)永远是 三、小练习：判断一个年份是否为闰年1234567891011temp = input(&apos;请输入一个年份：&apos;)while not temp.isdigit(): print(&apos;抱歉错了 请输入一个整数：&apos;)year = int(temp)if year/400 == int(year/400): print(temp+&apos;是闰年！&apos;)else: if (year/4 == int(year/4)) and (year/100 != int(year/100)): print(temp + &apos;是闰年！&apos;) else: print(temp +&apos;不是闰年！&apos;)]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>-Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MySQL数据插入+自动编号]]></title>
     <url>%2F2019%2F02%2F18%2FMySQL%E6%95%B0%E6%8D%AE%E6%8F%92%E5%85%A5%2B%E8%87%AA%E5%8A%A8%E7%BC%96%E5%8F%B7%2F</url>
     <content type="text"><![CDATA[一、单表数据插入1.为表的所有列插入数据123insert into 表名(列名1，列名2....)values(value_list);insert into T_student(id,name,gender,hobbies)values(4,&apos;汪峰&apos;,1,&apos;当导师&apos;); 2.为表的指定列插入数据123insert into 表名(列名1，列名2....)values(value_list);insert into T_student(id,name,gender)values(4,&apos;汪峰&apos;,1); 3.同时插入多条记录123insert into 表名(列名1，列名2....)values(value1),(value2),...(valuen);insert into T_student(id,name,gender,hobbies)values(4,&apos;汪峰&apos;,1,&apos;当导师&apos;),(6,&apos;wmz&apos;,2,&apos;aaa&apos;); 4.将查询结果插入到表中insert into bookcategory select * from test where category_id&lt;3; insert和select中的列名不需要完全相同，事实上MySQL甚至不关心select返回的列名，它使用的是列的位置。且插入的数据结构必须一致，不然会因数据类型不同等而不能插入。 二、设置自动编号1.设置表的属性值自动增加语法格式：列名 数据类型 auto_increment auto_increment约束的字段可以是任何整数类型（tinyint，smallint，int等）。 2.为已有的表添加自增列alter table bookcategory modify category_id int auto_increment; 若想给有关联关系的表添加自动编号，则先去掉关联关系，设置完后再关联上。 3.修改自增列的起始值alter table bookcategory auto_increment=x; 修改后auto_increment列起始值从x开始。 4.去掉自增列alter table bookcategory modify category_id int;]]></content>
@@ -52,7 +63,7 @@
         <category>MySQL</category>
       </categories>
       <tags>
-        <tag>MySQL 数据库</tag>
+        <tag>MySQL</tag>
       </tags>
   </entry>
   <entry>
