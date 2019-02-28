@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Python的部分数值类型]]></title>
-    <url>%2F2019%2F02%2F28%2F%E5%9B%9E%E5%BD%92Python%2F</url>
+    <url>%2F2019%2F02%2F28%2FPython%E7%9A%84%E9%83%A8%E5%88%86%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[一、Python的一些数值类型1.整型：整数2.浮点型；小数 3.e记法：科学计数法 （肥肠大或者小的数） eg：0.000000000000000000000000000000006 = 6e-3315e10 = 150000000000.0 e=10 e10 = e的10次方 4.布尔类型：true = 1 false = 0 true + true = 2 true + false = 1 （知道就行，别乱用） 因为计算机只识别二进制数0 1 所以用0 1代表false true 二、类型转换 1.int() 整数注意： int()中不能有除了数字以外的东西 浮点型转化为整数时，对小数点后面的数采取截断，而不是四舍五入 2.float() 浮点数1234&gt;&gt;&gt;a = &apos;520&apos;&gt;&gt;&gt;b = float(a)&gt;&gt;&gt;b520.0 3.str() 字符串12345678a = 5.99b = str(a)b&apos;5.99&apos;c = str(5e19)c&apos;5e+19&apos;+号是变大，-号是变小，即10的正/负几次方 4.type() isinstance()用法：获得关于类型的信息建议使用isinstance，较直接，且type()会有别的用处 5.ps： temp = input(‘猜个数字:’) while type(temp)!=type(1): print(‘sorry 不合法’,end=’’) temp = input(‘请输入一个整数:’) 但是input()的返回值始终是字符串，所以type(temp)永远是 三、小练习：判断一个年份是否为闰年1234567891011temp = input(&apos;请输入一个年份：&apos;)while not temp.isdigit(): print(&apos;抱歉错了 请输入一个整数：&apos;)year = int(temp)if year/400 == int(year/400): print(temp+&apos;是闰年！&apos;)else: if (year/4 == int(year/4)) and (year/100 != int(year/100)): print(temp + &apos;是闰年！&apos;) else: print(temp +&apos;不是闰年！&apos;)]]></content>
       <categories>
         <category>Python</category>
