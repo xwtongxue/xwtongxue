@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python的分支和循环]]></title>
+    <url>%2F2019%2F03%2F04%2FPython%E7%9A%84%E5%88%86%E6%94%AF%E5%92%8C%E5%BE%AA%E7%8E%AF%2F</url>
+    <content type="text"><![CDATA[本讲将讲述python中的分支和循环。大方向：从上到下。分支：则进入不同的分支（if）。循环（while）：则会执行多次相同的代码。123456789101112131415- 单分支判断 if 条件: 条件满足时，执行语句... 双分支判断 if 条件: 条件满足时，执行语句... else: 条件不满足时，执行语句... 多分支判断: if 条件: 条件满足时，执行语句... elif 条件: 条件满足时，执行语句... else: 以上条件都不满足时，执行语句... 一、打飞机游戏1234567891011121314151617181920212223加载背景音乐播放背景音乐（设置单曲循环）我方飞机诞生interval = 0while true: if 用户是否点击了关闭按钮: 退出程序 interval += 1 if interval == 50: interval = 0 小飞机诞生 小飞机移动一个位置 屏幕刷新 if 用户鼠标产生移动: 我方飞机中心位置 = 用户鼠标位置 屏幕刷新 if 我方飞机与小飞机发生肢体冲突: 我方挂，播放撞击音乐 修改我方飞机图案 打印&apos;game over&apos; 停止背景音乐，最好淡出 二、分数游戏1234567891011score = int(input(&apos;请输入一个分数：&apos;))if 100 &gt;= score &gt;=90: print(&apos;A&apos;)elif 90&gt;score&gt;80: print(&apos;B&apos;)elif 80&gt;score&gt;60: print(&apos;C&apos;)elif 60&gt;score&gt;=0: print(&apos;D&apos;)else: print(&apos;输入错误&apos;) elif = else if 若是if else用法 则第一个if为真后就不会执行后面的if，若只是if语句，则每一条if都要执行，很慢。 三、条件操作符（三元/三目操作符） 四、assert（断言）]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>-Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python的部分数值类型+常用操作符]]></title>
     <url>%2F2019%2F02%2F28%2FPython%E7%9A%84%E9%83%A8%E5%88%86%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[一、Python的一些数值类型1.整型：整数2.浮点型；小数 3.e记法：科学计数法 （肥肠大或者小的数） eg：0.000000000000000000000000000000006 = 6e-3315e10 = 150000000000.0 e=10 e10 = e的10次方 4.布尔类型：true = 1 false = 0 true + true = 2 true + false = 1 （知道就行，别乱用） 因为计算机只识别二进制数0 1 所以用0 1代表false true 二、类型转换 1.int() 整数注意： int()中不能有除了数字以外的东西 浮点型转化为整数时，对小数点后面的数采取截断，而不是四舍五入 2.float() 浮点数1234&gt;&gt;&gt;a = &apos;520&apos;&gt;&gt;&gt;b = float(a)&gt;&gt;&gt;b520.0 3.str() 字符串12345678a = 5.99b = str(a)b&apos;5.99&apos;c = str(5e19)c&apos;5e+19&apos;+号是变大，-号是变小，即10的正/负几次方 4.type() isinstance()用法：获得关于类型的信息建议使用isinstance，较直接，且type()会有别的用处 5.ps： temp = input(‘猜个数字:’) while type(temp)!=type(1): print(‘sorry 不合法’,end=’’) temp = input(‘请输入一个整数:’) 但是input()的返回值始终是字符串，所以type(temp)永远是 三、小练习：判断一个年份是否为闰年1234567891011temp = input(&apos;请输入一个年份：&apos;)while not temp.isdigit(): print(&apos;抱歉错了 请输入一个整数：&apos;)year = int(temp)if year/400 == int(year/400): print(temp+&apos;是闰年！&apos;)else: if (year/4 == int(year/4)) and (year/100 != int(year/100)): print(temp + &apos;是闰年！&apos;) else: print(temp +&apos;不是闰年！&apos;) 四、常用操作符1.常用操作符的分类及等级 c = 10 c * 10 = 100 或 c = 10 c *= 10 c = 100(加减乘除同样适用) %取余数 幂运算操作符比其左侧的一元操作符优先级高，比其右侧一元操作符优先级低。 3 ** -2 = 0.1111 3 ** (-2)=0.1111 -(3 ** 2)=-9 即左高右低 not &gt; and &gt; or eg: 请用最快速度说出答案：not 1 or 0 and 1 or 3 and 4 or 5 and 6 or 7 and 8 and 9 解：（not 1） or （0 and 1） or （3 and 4） or （5 and 6） or （7 and 8 and 9） == 0 or 0 or 4 or 6 or 9 == 4 因为“短路逻辑”，3 and 4 = 4, 3 or 4 = 3,两边都不是0的情况下 and 直接取后面的值，or 直接取前面的值。如果存在0的情况，and 直接取0，or 直接取非0，false是 0 ，所以 0 or 0 or 4 or 6 or 9 ，第一个不为0的是 4 ，所以是4 ，0 or 0是 0 六、小练习1.请写一个程序打印出0-100所有的奇数1234567i = 0while i&lt;=100: if i%2 != 0: print(i,end=&apos; &apos;) i +=1 else: i +=1 2.有一个长阶梯，若每步上2阶，最后剩1阶；若每步上3阶，最后剩2阶；若每步上5阶，最后剩4阶；若每步上6阶，最后剩5阶；只有每步上7阶，最后刚好一阶也不剩。求该阶梯有多少阶？12345678910111213x = 7i = 1flag = 0while i&lt;=100: if (x%2 == 1)and(x%3 == 2)and(x%5 == 4)and(x%6 == 5): flag = 1 else: x = 7*(i+1) i +=1if flag ==1: print(&apos;阶梯数：&apos;,x)else: print(&apos;no&apos;) flag一般为标记的意思，题中flag = 1，即标记为真]]></content>
