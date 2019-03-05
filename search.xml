@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Python的分支和循环]]></title>
-    <url>%2F2019%2F03%2F04%2FPython%E7%9A%84%E5%88%86%E6%94%AF%E5%92%8C%E5%BE%AA%E7%8E%AF%2F</url>
-    <content type="text"><![CDATA[本讲将讲述python中的分支和循环。大方向：从上到下。分支：则进入不同的分支（if）。循环（while）：则会执行多次相同的代码。123456789101112131415- 单分支判断 if 条件: 条件满足时，执行语句... 双分支判断 if 条件: 条件满足时，执行语句... else: 条件不满足时，执行语句... 多分支判断: if 条件: 条件满足时，执行语句... elif 条件: 条件满足时，执行语句... else: 以上条件都不满足时，执行语句... 一、打飞机游戏1234567891011121314151617181920212223加载背景音乐播放背景音乐（设置单曲循环）我方飞机诞生interval = 0while true: if 用户是否点击了关闭按钮: 退出程序 interval += 1 if interval == 50: interval = 0 小飞机诞生 小飞机移动一个位置 屏幕刷新 if 用户鼠标产生移动: 我方飞机中心位置 = 用户鼠标位置 屏幕刷新 if 我方飞机与小飞机发生肢体冲突: 我方挂，播放撞击音乐 修改我方飞机图案 打印&apos;game over&apos; 停止背景音乐，最好淡出 二、分数游戏1234567891011score = int(input(&apos;请输入一个分数：&apos;))if 100 &gt;= score &gt;=90: print(&apos;A&apos;)elif 90&gt;score&gt;80: print(&apos;B&apos;)elif 80&gt;score&gt;60: print(&apos;C&apos;)elif 60&gt;score&gt;=0: print(&apos;D&apos;)else: print(&apos;输入错误&apos;) elif = else if 若是if else用法 则第一个if为真后就不会执行后面的if，若只是if语句，则每一条if都要执行，很慢。 三、条件操作符（三元/三目操作符） 四、assert（断言）]]></content>
+    <title><![CDATA[Python的列表]]></title>
+    <url>%2F2019%2F03%2F05%2FPython%E7%9A%84%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[本讲讲述Python中的列表，在python中数组相当于集装箱，列表[]相当于工厂仓库，以下会进行讲解。 一、列表与数组python中的数组可以有任何形式的元素，如图所示。 1.创建一个普通列表1234567member = [&apos;wmz&apos;,&apos;www&apos;,&apos;mmm&apos;,&apos;zzz&apos;]member[&apos;wmz&apos;,&apos;www&apos;,&apos;mmm&apos;,&apos;zzz&apos;]number = [1,2,3,4]number[1,2,3,4] 2.创建一个混合列表123mix = [1,&apos;wmz&apos;,2,3,[1,2,3]]mix[1,&apos;wmz&apos;,2,3,[1,2,3]] 3.创建一个空列表123empty[]empty[] 二、向列表添加元素1.append() .是范围的意思 且一次只能添加一个元素 2.extend() 打了[]可以有多个元素 3.insert() 第一个数为位置，第二个为元素，只能有位置和一个元素。]]></content>
       <categories>
         <category>Python</category>
       </categories>
       <tags>
-        <tag>-Python</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python的分支和循环]]></title>
+    <url>%2F2019%2F03%2F04%2FPython%E7%9A%84%E5%88%86%E6%94%AF%E5%92%8C%E5%BE%AA%E7%8E%AF%2F</url>
+    <content type="text"><![CDATA[本讲将讲述python中的分支和循环。大方向：从上到下。分支：则进入不同的分支（if）。循环（while）：则会执行多次相同的代码。123456789101112131415- 单分支判断 if 条件: 条件满足时，执行语句... 双分支判断 if 条件: 条件满足时，执行语句... else: 条件不满足时，执行语句... 多分支判断: if 条件: 条件满足时，执行语句... elif 条件: 条件满足时，执行语句... else: 以上条件都不满足时，执行语句... 一、打飞机游戏1234567891011121314151617181920212223加载背景音乐播放背景音乐（设置单曲循环）我方飞机诞生interval = 0while true: if 用户是否点击了关闭按钮: 退出程序 interval += 1 if interval == 50: interval = 0 小飞机诞生 小飞机移动一个位置 屏幕刷新 if 用户鼠标产生移动: 我方飞机中心位置 = 用户鼠标位置 屏幕刷新 if 我方飞机与小飞机发生肢体冲突: 我方挂，播放撞击音乐 修改我方飞机图案 打印&apos;game over&apos; 停止背景音乐，最好淡出 二、分数游戏1234567891011score = int(input(&apos;请输入一个分数：&apos;))if 100 &gt;= score &gt;=90: print(&apos;A&apos;)elif 90&gt;score&gt;80: print(&apos;B&apos;)elif 80&gt;score&gt;60: print(&apos;C&apos;)elif 60&gt;score&gt;=0: print(&apos;D&apos;)else: print(&apos;输入错误&apos;) elif = else if 若是if else用法 则第一个if为真后就不会执行后面的if，若只是if语句，则每一条if都要执行，很慢。 三、条件操作符（三元/三目操作符） 四、assert（断言） assert的作用：当assert关键字后面的条件为假的时候，程序自动崩溃并抛出assertionerror的异常。什么情况下我们会需要这样的代码呢？当我们在测试程序的时候就很好用，因为与其让错误的条件导致程序今后莫名其妙的崩溃，不如在错误条件出现的那一瞬间实现“自爆”。一般来说我们可以用ta在程序中置入检查点，当需要确保程序中的某个条件一定为真才能让程序正常工作的话，assert关键字就非常有用了。 五、小练习1.变量互换假设有x = 1，y = 2，z = 3，请问如何快速将三个变量的值互相交换？x,y,z, = z,y,x 2.成员资格运算符in：用于检查一个值是否在序列中，如果在序列中返回true，否则返回false。12345name = &apos;wmz&apos;&apos;w&apos; in nametrue&apos;f&apos; in name false 3.三元操作符small = x if(x &lt; y and x &lt; z) else (y if y &lt; z else z) 六、while 循环12while 条件: 循环体 条件为真，执行循环体。 七、for循环 语法：for 目标 in 表达式: 循环体 12345abc= = &apos;me&apos;for i in abc: print(i,end=&apos; &apos;)m e 1234567891011[]:列表abc = [&apos;1&apos;,&apos;小羊羔&apos;,&apos;6&apos;,&apos;666&apos;]for aaa in abc: print(aaa,len(aaa))1 1小羊羔 36 1666 3其中的‘目标’并不是要在abc内，跟上面直接用in不一样 八、range() range常与for进行搭配，其中step为步径。 九、两个关键语句1.break终止当前循环，跳出循环体.且break只能跳出一层循环。 2.continue终止本轮循环，并执行下一循环，在执行下一循环之前，ta会先测试这个循环条件，只有在这个条件为true的情况下才会执行，若false则退出循环。 理解下图即理解break+continue： 十、小练习2 设计一个验证用户密码程序，用户只有三次机会输入错误，不过如果用户输入的内容中包含 * 则不计算在内。(执行有问题，还未修改) 1234567891011121314count = 3password = &apos;wmz&apos;while count: passwd = input(&apos;请输入密码：&apos;) if passwd == password: print(&apos;yes&apos;) break elif &apos;*&apos;in password: print(&apos;密码中不能含有&apos;*&apos;号，您还有&apos;,count,&apos;次机会&apos;,end=&apos; &apos;) continue else: print(&apos;no,您还有&apos;,count,&apos;次机会&apos;,end=&apos; &apos;) count -=1 1234567891011121314151617181920212223for red in range(0,4): for yellow in range(0,4): for green in range(2,7): if red+yellow+green == 8: print(red,&apos;\t&apos;,yellow,&apos;\t&apos;,green)red yellow green0 2 60 3 51 1 61 2 51 3 42 0 62 1 52 2 42 3 33 0 53 1 43 2 33 3 2\t :横向制表符\v :纵向制表符]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
