@@ -83,7 +83,7 @@
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python的列表">
-<meta property="og:url" content="http://yoursite.com/2019/03/05/Python的数组/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/03/05/Python的列表/index.html">
 <meta property="og:site_name" content="xwtongxue">
 <meta property="og:description" content="本讲讲述Python中的列表，在python中数组相当于集装箱，列表[]相当于工厂仓库，以下会进行讲解。">
 <meta property="og:locale" content="zh-Hans">
@@ -91,7 +91,11 @@
 <meta property="og:image" content="http://yoursite.com/img/Python的列表/2.png">
 <meta property="og:image" content="http://yoursite.com/img/Python的列表/3.png">
 <meta property="og:image" content="http://yoursite.com/img/Python的列表/4.png">
-<meta property="og:updated_time" content="2019-03-05T15:45:25.899Z">
+<meta property="og:image" content="http://yoursite.com/img/Python的列表/5.png">
+<meta property="og:image" content="http://yoursite.com/img/Python的列表/6.png">
+<meta property="og:image" content="http://yoursite.com/img/Python的列表/7.png">
+<meta property="og:image" content="http://yoursite.com/img/Python的列表/8.png">
+<meta property="og:updated_time" content="2019-03-06T15:34:35.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python的列表">
 <meta name="twitter:description" content="本讲讲述Python中的列表，在python中数组相当于集装箱，列表[]相当于工厂仓库，以下会进行讲解。">
@@ -125,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/05/Python的数组/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/05/Python的列表/">
 
 
 
@@ -300,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/05/Python的数组/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/05/Python的列表/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xwtongxue">
@@ -370,8 +374,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/05/Python的数组/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/05/Python的数组/" itemprop="commentCount"></span>
+                <a href="/2019/03/05/Python的列表/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/05/Python的列表/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -379,7 +383,7 @@
 
           
           
-             <span id="/2019/03/05/Python的数组/" class="leancloud_visitors" data-flag-title="Python的列表">
+             <span id="/2019/03/05/Python的列表/" class="leancloud_visitors" data-flag-title="Python的列表">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -404,7 +408,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  208
+                  1.5k
                 </span>
               
 
@@ -420,7 +424,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  7
                 </span>
               
             </div>
@@ -448,16 +452,68 @@
 <h2 id="3-创建一个空列表"><a href="#3-创建一个空列表" class="headerlink" title="3.创建一个空列表"></a>3.创建一个空列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">empty[]</span><br><span class="line">empty</span><br><span class="line">[]</span><br></pre></td></tr></table></figure>
 <h1 id="二、向列表添加元素"><a href="#二、向列表添加元素" class="headerlink" title="二、向列表添加元素"></a>二、向列表添加元素</h1><h2 id="1-append"><a href="#1-append" class="headerlink" title="1.append()"></a>1.append()</h2><p><img src="/img/Python的列表/2.png" alt="2"></p>
 <ul>
-<li>.是范围的意思 且一次只能添加一个元素</li>
+<li>.是范围的意思 且一次只能添加一个元素,打了[]可以以列表形式添加进去（将参数作为一个元素增加到列表的末尾）</li>
 </ul>
 <h2 id="2-extend"><a href="#2-extend" class="headerlink" title="2.extend()"></a>2.extend()</h2><p><img src="/img/Python的列表/3.png" alt="3"></p>
 <ul>
-<li>打了[]可以有多个元素</li>
+<li>打了[]可以有多个元素，正常元素形式(将参数作为一个列表去扩展列表的末尾)</li>
 </ul>
 <h2 id="3-insert"><a href="#3-insert" class="headerlink" title="3.insert()"></a>3.insert()</h2><p><img src="/img/Python的列表/4.png" alt="4"></p>
 <ul>
-<li>第一个数为位置，第二个为元素，只能有位置和一个元素。</li>
+<li>第一个数为位置，第二个为元素，只能有位置和一个元素。且开头的位置为0而不是1。</li>
 </ul>
+<hr>
+<h1 id="三、查找列表中的元素"><a href="#三、查找列表中的元素" class="headerlink" title="三、查找列表中的元素"></a>三、查找列表中的元素</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">eg:</span><br><span class="line">mix = [1,&apos;wmz&apos;,2,3,[1,2,3]]</span><br><span class="line">mix[4]</span><br><span class="line">[1,2,3]</span><br></pre></td></tr></table></figure>
+<h1 id="四、从列表删除元素"><a href="#四、从列表删除元素" class="headerlink" title="四、从列表删除元素"></a>四、从列表删除元素</h1><h2 id="1-remove"><a href="#1-remove" class="headerlink" title="1.remove()"></a>1.remove()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; mix.remove(&apos;wmz&apos;)</span><br><span class="line">&gt;&gt;&gt; mix</span><br><span class="line">[1, 2, 3, [1, 2, 3]]</span><br></pre></td></tr></table></figure>
+<h2 id="2-del语句"><a href="#2-del语句" class="headerlink" title="2.del语句"></a>2.del语句</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; del mix[2]</span><br><span class="line">&gt;&gt;&gt; mix</span><br><span class="line">[1, 2, [1, 2, 3]]</span><br></pre></td></tr></table></figure>
+<h2 id="3-pop"><a href="#3-pop" class="headerlink" title="3.pop()"></a>3.pop()</h2><p>()中为空时，从列表中取出最后一个元素去除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; mix</span><br><span class="line">[1, 2, [1, 2, 3]]</span><br><span class="line">&gt;&gt;&gt; mix.pop()</span><br><span class="line">[1, 2, 3]</span><br><span class="line">&gt;&gt;&gt; mix</span><br><span class="line">[1, 2]</span><br></pre></td></tr></table></figure></p>
+<p>若pop()中有数字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; mix.pop(0)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; mix</span><br><span class="line">[2]</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>remove()内为字符串</li>
+<li>del pop()内为数字即位置</li>
+</ul>
+<h1 id="五、列表分片-slice"><a href="#五、列表分片-slice" class="headerlink" title="五、列表分片(slice)"></a>五、列表分片(slice)</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; mix = [1,&apos;wmz&apos;,2,3,[1,2,3]]</span><br><span class="line">&gt;&gt;&gt; mix</span><br><span class="line">[1, &apos;wmz&apos;, 2, 3, [1, 2, 3]</span><br><span class="line">&gt;&gt;&gt; mix[1:3]</span><br><span class="line">[&apos;wmz&apos;, 2]</span><br><span class="line">&gt;&gt;&gt; mix[:4]</span><br><span class="line">[1, &apos;wmz&apos;, 2, 3]</span><br><span class="line">&gt;&gt;&gt; mix[1:]</span><br><span class="line">[&apos;wmz&apos;, 2, 3, [1, 2, 3]]</span><br><span class="line">&gt;&gt;&gt; mix[:]</span><br><span class="line">[1, &apos;wmz&apos;, 2, 3, [1, 2, 3]]</span><br></pre></td></tr></table></figure>
+<ul>
+<li>0可直接省略<br>若想对列表进行拷贝等，且不想改变列表<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; mix2 = mix[:]</span><br><span class="line">&gt;&gt;&gt; mix2</span><br><span class="line">[1, &apos;wmz&apos;, 2, 3, [1, 2, 3]]</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="六、列表的一些常用操作符"><a href="#六、列表的一些常用操作符" class="headerlink" title="六、列表的一些常用操作符"></a>六、列表的一些常用操作符</h1><h2 id="1-比较操作符"><a href="#1-比较操作符" class="headerlink" title="1.比较操作符"></a>1.比较操作符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; list1 = [123]</span><br><span class="line">&gt;&gt;&gt; list2 = [234]</span><br><span class="line">&gt;&gt;&gt; list1 &gt; list2</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt; list1 = [123,789]</span><br><span class="line">&gt;&gt;&gt; list2 = [234,456]</span><br><span class="line">&gt;&gt;&gt; list1 &gt; list2</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+<ul>
+<li>多个元素比较时，比较0位置的数，后面不作比较</li>
+<li>只能字符串和字符串，数字和数字之间比较，不能乱比</li>
+</ul>
+<h2 id="2-逻辑操作符"><a href="#2-逻辑操作符" class="headerlink" title="2.逻辑操作符"></a>2.逻辑操作符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = [1,2]</span><br><span class="line">&gt;&gt;&gt; b = [2,3]</span><br><span class="line">&gt;&gt;&gt; c = [3,4]</span><br><span class="line">&gt;&gt;&gt; (a&lt;b)and(a == b)</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt; (a&lt;b)and(b&lt;c)</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+<h2 id="3-连接操作符"><a href="#3-连接操作符" class="headerlink" title="3.连接操作符"></a>3.连接操作符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = [1,2]</span><br><span class="line">&gt;&gt;&gt; b = [2,3]</span><br><span class="line">&gt;&gt;&gt; c = [3,4]</span><br><span class="line">&gt;&gt;&gt; d = a+ b</span><br><span class="line">&gt;&gt;&gt; d</span><br><span class="line">[1, 2, 2, 3]</span><br><span class="line">但最好不要直接用加号，可以用加入元素等方法加入append()等。</span><br></pre></td></tr></table></figure>
+<h2 id="4-重复操作符"><a href="#4-重复操作符" class="headerlink" title="4.重复操作符 *"></a>4.重复操作符 *</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a*3</span><br><span class="line">[1, 2, 1, 2, 1, 2]</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; a *= 3</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[1, 2, 1, 2, 1, 2]</span><br></pre></td></tr></table></figure>
+<h2 id="5-成员关系操作符"><a href="#5-成员关系操作符" class="headerlink" title="5.成员关系操作符"></a>5.成员关系操作符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = [1,2,3]</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[1, 2, 3]</span><br><span class="line">&gt;&gt;&gt; a.append([&apos;wmz&apos;,666])</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[1, 2, 3, [&apos;wmz&apos;, 666]]</span><br><span class="line">&gt;&gt;&gt; &apos;wmz&apos; in a</span><br><span class="line">False</span><br><span class="line">&gt;&gt;&gt; 1 in a</span><br><span class="line">True</span><br><span class="line">&gt;&gt;&gt; 5 not in a</span><br><span class="line">True</span><br><span class="line">&gt;&gt;&gt; &apos;wmz&apos; in a[3]</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+<ul>
+<li>成员操作符 in / not in只能管一层(break、continue)</li>
+<li>对于列表中的列表如何索引<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; &apos;wmz&apos; in a[3]</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="6-其他内置函数"><a href="#6-其他内置函数" class="headerlink" title="6.其他内置函数"></a>6.其他内置函数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; dir(list) # list是列表的意思</span><br><span class="line">[&apos;__add__&apos;, &apos;__class__&apos;, &apos;__contains__&apos;, &apos;__delattr__&apos;, &apos;__delitem__&apos;, &apos;__dir__&apos;, &apos;__doc__&apos;, &apos;__eq__&apos;, &apos;__format__&apos;, &apos;__ge__&apos;, &apos;__getattribute__&apos;, &apos;__getitem__&apos;, &apos;__gt__&apos;, &apos;__hash__&apos;, &apos;__iadd__&apos;, &apos;__imul__&apos;, &apos;__init__&apos;, &apos;__init_subclass__&apos;, &apos;__iter__&apos;, &apos;__le__&apos;, &apos;__len__&apos;, &apos;__lt__&apos;, &apos;__mul__&apos;, &apos;__ne__&apos;, &apos;__new__&apos;, &apos;__reduce__&apos;, &apos;__reduce_ex__&apos;, &apos;__repr__&apos;, &apos;__reversed__&apos;, &apos;__rmul__&apos;, &apos;__setattr__&apos;, &apos;__setitem__&apos;, &apos;__sizeof__&apos;, &apos;__str__&apos;, &apos;__subclasshook__&apos;, &apos;append&apos;, &apos;clear&apos;, &apos;copy&apos;, &apos;count&apos;, &apos;extend&apos;, &apos;index&apos;, &apos;insert&apos;, &apos;pop&apos;, &apos;remove&apos;, &apos;reverse&apos;, &apos;sort&apos;]</span><br></pre></td></tr></table></figure>
+<h3 id="1-count"><a href="#1-count" class="headerlink" title="1.count()"></a>1.count()</h3><p>count() 是计算列表中某一元素出现的次数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[1, 2, 3, [&apos;wmz&apos;, 666], 1, 2, 3, [&apos;wmz&apos;, 666], 1, 2, 3, [&apos;wmz&apos;, 666]]</span><br><span class="line">&gt;&gt;&gt; a.count(1)</span><br><span class="line">3</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-index"><a href="#2-index" class="headerlink" title="2.index()"></a>2.index()</h3><p>索引：返回参数在列表中的位置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[1, 2, 3, [&apos;wmz&apos;, 666], 1, 2, 3, [&apos;wmz&apos;, 666], 1, 2, 3, [&apos;wmz&apos;, 666]]</span><br><span class="line">&gt;&gt;&gt; a.index(1)</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; a.index(1,2,6)</span><br><span class="line">4</span><br><span class="line"># 1,2,6 : 1是要查找的参数，2是起始位置，6是截止位置，表示在2,6之间的1的位置。</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-reverse"><a href="#3-reverse" class="headerlink" title="3.reverse()"></a>3.reverse()</h3><p>翻转整个列表<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a.reverse()</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[[&apos;wmz&apos;, 666], 3, 2, 1, [&apos;wmz&apos;, 666], 3, 2, 1, [&apos;wmz&apos;, 666], 3, 2, 1]</span><br></pre></td></tr></table></figure></p>
+<h3 id="4-sort"><a href="#4-sort" class="headerlink" title="4.sort()"></a>4.sort()</h3><p>对列表成员排序，默认从小到大排序（针对数字）。</p>
+<ul>
+<li><p>从小到大 b.sort()</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; b = [6,5,8,9,4,55,2,33,6666]</span><br><span class="line">&gt;&gt;&gt; b</span><br><span class="line">[6, 5, 8, 9, 4, 55, 2, 33, 6666]</span><br><span class="line">&gt;&gt;&gt; b.sort()</span><br><span class="line">&gt;&gt;&gt; b</span><br><span class="line">[2, 4, 5, 6, 8, 9, 33, 55, 6666]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>从大到小<br>b.sort(reverse = True)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; b.sort(reverse=True)</span><br><span class="line">&gt;&gt;&gt; b</span><br><span class="line">[6666, 55, 33, 9, 8, 6, 5, 4, 2]</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="5-列表分片“拷贝”"><a href="#5-列表分片“拷贝”" class="headerlink" title="5.列表分片“拷贝”"></a>5.列表分片“拷贝”</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; c = b[:]</span><br><span class="line">&gt;&gt;&gt; c</span><br><span class="line">[2, 4, 5, 6, 8, 9, 33, 55, 6666]</span><br><span class="line">&gt;&gt;&gt; d = b</span><br><span class="line">&gt;&gt;&gt; d</span><br><span class="line">[2, 4, 5, 6, 8, 9, 33, 55, 6666]</span><br><span class="line">&gt;&gt;&gt; b.reverse()</span><br><span class="line">&gt;&gt;&gt; b</span><br><span class="line">[6666, 55, 33, 9, 8, 6, 5, 4, 2]</span><br><span class="line">&gt;&gt;&gt; c</span><br><span class="line">[2, 4, 5, 6, 8, 9, 33, 55, 6666]</span><br><span class="line">&gt;&gt;&gt; d</span><br><span class="line">[6666, 55, 33, 9, 8, 6, 5, 4, 2]</span><br></pre></td></tr></table></figure>
+<ul>
+<li>分片:是复制，不会跟着变<br>= 是赋值，会跟着变</li>
+<li>在列表中若要拷贝记得用分片，若赋值会容易出错</li>
+</ul>
+<h1 id="七、小练习"><a href="#七、小练习" class="headerlink" title="七、小练习"></a>七、小练习</h1><h2 id="1-如何修改指定位置的元素"><a href="#1-如何修改指定位置的元素" class="headerlink" title="1.如何修改指定位置的元素"></a>1.如何修改指定位置的元素</h2><p><img src="/img/Python的列表/5.png" alt="5"></p>
+<h2 id="2-copy"><a href="#2-copy" class="headerlink" title="2.copy()"></a>2.copy()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = [&apos;aaa&apos;]</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[&apos;aaa&apos;]</span><br><span class="line">&gt;&gt;&gt; b = a.copy()</span><br><span class="line">&gt;&gt;&gt; b</span><br><span class="line">[&apos;aaa&apos;]</span><br></pre></td></tr></table></figure>
+<h2 id="3-clear"><a href="#3-clear" class="headerlink" title="3.clear()"></a>3.clear()</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a.clear()</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">[]</span><br></pre></td></tr></table></figure>
+<p>清空列表元素，但列表仍在。</p>
+<h2 id="4-列表推导式或列表解析"><a href="#4-列表推导式或列表解析" class="headerlink" title="4.列表推导式或列表解析"></a>4.列表推导式或列表解析</h2><p><img src="/img/Python的列表/6.png" alt="6"><br><img src="/img/Python的列表/7.png" alt="7"><br><img src="/img/Python的列表/8.png" alt="8"></p>
 
       
     </div>
@@ -672,7 +728,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、列表与数组"><span class="nav-number">1.</span> <span class="nav-text">一、列表与数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-创建一个普通列表"><span class="nav-number">1.1.</span> <span class="nav-text">1.创建一个普通列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-创建一个混合列表"><span class="nav-number">1.2.</span> <span class="nav-text">2.创建一个混合列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-创建一个空列表"><span class="nav-number">1.3.</span> <span class="nav-text">3.创建一个空列表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、向列表添加元素"><span class="nav-number">2.</span> <span class="nav-text">二、向列表添加元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-append"><span class="nav-number">2.1.</span> <span class="nav-text">1.append()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-extend"><span class="nav-number">2.2.</span> <span class="nav-text">2.extend()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-insert"><span class="nav-number">2.3.</span> <span class="nav-text">3.insert()</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、列表与数组"><span class="nav-number">1.</span> <span class="nav-text">一、列表与数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-创建一个普通列表"><span class="nav-number">1.1.</span> <span class="nav-text">1.创建一个普通列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-创建一个混合列表"><span class="nav-number">1.2.</span> <span class="nav-text">2.创建一个混合列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-创建一个空列表"><span class="nav-number">1.3.</span> <span class="nav-text">3.创建一个空列表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、向列表添加元素"><span class="nav-number">2.</span> <span class="nav-text">二、向列表添加元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-append"><span class="nav-number">2.1.</span> <span class="nav-text">1.append()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-extend"><span class="nav-number">2.2.</span> <span class="nav-text">2.extend()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-insert"><span class="nav-number">2.3.</span> <span class="nav-text">3.insert()</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、查找列表中的元素"><span class="nav-number">3.</span> <span class="nav-text">三、查找列表中的元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、从列表删除元素"><span class="nav-number">4.</span> <span class="nav-text">四、从列表删除元素</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-remove"><span class="nav-number">4.1.</span> <span class="nav-text">1.remove()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-del语句"><span class="nav-number">4.2.</span> <span class="nav-text">2.del语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-pop"><span class="nav-number">4.3.</span> <span class="nav-text">3.pop()</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、列表分片-slice"><span class="nav-number">5.</span> <span class="nav-text">五、列表分片(slice)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、列表的一些常用操作符"><span class="nav-number">6.</span> <span class="nav-text">六、列表的一些常用操作符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-比较操作符"><span class="nav-number">6.1.</span> <span class="nav-text">1.比较操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-逻辑操作符"><span class="nav-number">6.2.</span> <span class="nav-text">2.逻辑操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-连接操作符"><span class="nav-number">6.3.</span> <span class="nav-text">3.连接操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-重复操作符"><span class="nav-number">6.4.</span> <span class="nav-text">4.重复操作符 *</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-成员关系操作符"><span class="nav-number">6.5.</span> <span class="nav-text">5.成员关系操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-其他内置函数"><span class="nav-number">6.6.</span> <span class="nav-text">6.其他内置函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-count"><span class="nav-number">6.6.1.</span> <span class="nav-text">1.count()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-index"><span class="nav-number">6.6.2.</span> <span class="nav-text">2.index()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-reverse"><span class="nav-number">6.6.3.</span> <span class="nav-text">3.reverse()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-sort"><span class="nav-number">6.6.4.</span> <span class="nav-text">4.sort()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-列表分片“拷贝”"><span class="nav-number">6.6.5.</span> <span class="nav-text">5.列表分片“拷贝”</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、小练习"><span class="nav-number">7.</span> <span class="nav-text">七、小练习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-如何修改指定位置的元素"><span class="nav-number">7.1.</span> <span class="nav-text">1.如何修改指定位置的元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-copy"><span class="nav-number">7.2.</span> <span class="nav-text">2.copy()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-clear"><span class="nav-number">7.3.</span> <span class="nav-text">3.clear()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-列表推导式或列表解析"><span class="nav-number">7.4.</span> <span class="nav-text">4.列表推导式或列表解析</span></a></li></ol></li></ol></div>
             
 
           </div>
