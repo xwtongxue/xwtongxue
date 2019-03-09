@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python的函数]]></title>
+    <url>%2F2019%2F03%2F09%2FPython%E7%9A%84%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[Python有三大重要之处：对象、函数、模块，本讲主要针对函数。 一、创建使用函数def 函数名称(): # def () :必不可少12345678910&gt;&gt;&gt; def MYFIRSTFUNCTION(): print(&apos;这是我创建的第一个函数！&apos;) print(&apos;im so excited&apos;) print(&apos;happyhappy!&apos;) #代码块 &gt;&gt;&gt; MYFIRSTFUNCTION()这是我创建的第一个函数！im so excitedhappyhappy! 二、函数的参数1.理解参数使函数个性化，记得可写上参数的注释。1234567&gt;&gt;&gt; def add(num1,num2): result = num1+num2 print(result) &gt;&gt;&gt; add(1,2)3 2.函数的返回值12345&gt;&gt;&gt; def add(num1,num2): return (num1+num2)&gt;&gt;&gt; print(add(666,888))1554 3.形参和实参 4.函数文档123456789&gt;&gt;&gt; def a(): &apos;aaaa&apos; print(&apos;lalal&apos;) &gt;&gt;&gt; a()lalal&gt;&gt;&gt; a.__doc__&apos;aaaa&apos; ‘里面是文档内容’ print()是输出的内容 5.关键字参数在内容前加上参数名称1234567891011&gt;&gt;&gt; def a(name,word): print(name+&apos;wmz&apos;+word)&gt;&gt;&gt; a(&apos;爱你&apos;,&apos;爱你&apos;)爱你wmz爱你&gt;&gt;&gt; a(&apos;小甲鱼&apos;,&apos;sb&apos;)小甲鱼wmzsb&gt;&gt;&gt; a(&apos;sb&apos;,&apos;小甲鱼&apos;)sbwmz小甲鱼&gt;&gt;&gt; a(word=&apos;sb&apos;,name=&apos;小甲鱼&apos;)小甲鱼wmzsb 虽然会多打一些字，但等参数很多的时候就不会乱了。 6.默认参数def中设置，若之后忘记输入参数，也可以实现。123456&gt;&gt;&gt; def a(word=&apos;sb&apos;,name=&apos;小甲鱼&apos;): print(name+&apos;aa&apos;+word) &gt;&gt;&gt; a()小甲鱼aasb 7.收集参数：1234567891011121314151617181920212223242526272829303132333435&gt;&gt;&gt; def test(* params): print(&apos;参数长度：&apos;,len(params)); print(&apos;第一个参数是；&apos;,params[0]); &gt;&gt;&gt; test(1,2,3,8,8,8,8,88,888)参数长度： 9第一个参数是； 1# 但如果有其他参数在：&gt;&gt;&gt; def test(* params,exp): print(&apos;参数长度：&apos;,len(params)); print(&apos;第一个参数是；&apos;,params[0]);&gt;&gt;&gt; test(1,2,3,8,8,8,8,88,888)Traceback (most recent call last): File &quot;&lt;pyshell#84&gt;&quot;, line 1, in &lt;module&gt; test(1,2,3,8,8,8,8,88,888)TypeError: test() missing 1 required keyword-only argument: &apos;exp&apos;# 此时就会出错，就要使用关键字参数来定义exp这个参数&gt;&gt;&gt; test(1,2,3,8,8,8,8,88,888,exp=8)参数长度： 9第一个参数是； 1# 或者使用默认参数直接给exp参数赋值：&gt;&gt;&gt; def test(* params,exp=8): print(&apos;参数长度：&apos;,len(params),exp); print(&apos;第一个参数是；&apos;,params[0]); &gt;&gt;&gt; test(1,2,3,8,8,8,8,88,888)参数长度： 9 8第一个参数是； 1 三、小练习1]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python的序列]]></title>
     <url>%2F2019%2F03%2F09%2FPython%E7%9A%84%E5%BA%8F%E5%88%97%2F</url>
     <content type="text"><![CDATA[本讲讲述Python的序列，之前所讲的列表、元组、字符串统称为序列。 一、序列如开头所说，列表、元组、字符串都可以叫做序列，那么此处回忆一下列表、元组和字符串的共同特点： 都可以通过索引得到每一个元素 默认索引值总是从0开始 可以通过分片的方法得到一个范围内的元素的集合 有很多共同的操作符(重复操作符、拼接操作符、成员关系操作符) 二、迭代(iterable)迭代：重复反馈过程的活动，目的是为了接近或达到所需的目标/结果，每对过程进行一次重复叫一此迭代，每一次迭代的结果会被作为下一次的初始值。 1.list()把一个可迭代对象转换为列表:list(iterable)1234567891011&gt;&gt;&gt; a = &apos;abc&apos;&gt;&gt;&gt; a&apos;abc&apos;&gt;&gt;&gt; list(a)[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;]&gt;&gt;&gt; a = 1,2,3&gt;&gt;&gt; a(1, 2, 3)&gt;&gt;&gt; list(a)[1, 2, 3] 2.tuple()把一个可迭代对象转换为元组，和list操作一样。123&gt;&gt;&gt; a = &apos;abc&apos;&gt;&gt;&gt; tuple(a)(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;) 3.str() len() max() min() str() 把obj转换为字符串 len() 返回参数的长度 max() 返回序列或者参数集合中的最大值 min() 返回序列或者参数集合中的最小值 注：比较时数据类型要统一，都是数字，都是字符串等 4.sum(iterable,[start=0])返回序列iterable和可选参数start的总和123456&gt;&gt;&gt; c[1, 1, 2, 2, 3, 3, 8, 8]&gt;&gt;&gt; sum(c)28&gt;&gt;&gt; sum(c,5)33 5.sorted() = list.sort() = list(sorted())排序：默认从小到大。当sorted()不能正常使用时，转化为后两种即可，一般为最后的。12&gt;&gt;&gt; list(sorted(c))[1, 1, 2, 2, 3, 3, 8, 8] 6.reversed() = list(reversed())排序：默认从大到小12&gt;&gt;&gt; list(reversed(c))[8, 8, 3, 3, 2, 2, 1, 1] 7.enumerate()枚举12&gt;&gt;&gt; list(enumerate(c))[(0, 1), (1, 1), (2, 2), (3, 2), (4, 3), (5, 3), (6, 8), (7, 8)] 8.zip()压缩12345&gt;&gt;&gt; a = [4,5,6,7,8]&gt;&gt;&gt; c[1, 1, 2, 2, 3, 3, 8, 8]&gt;&gt;&gt; list(zip(a,c))[(4, 1), (5, 1), (6, 2), (7, 2), (8, 3)] 三、小练习]]></content>
@@ -52,7 +63,7 @@
         <category>Python</category>
       </categories>
       <tags>
-        <tag>-Python</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
