@@ -94,7 +94,9 @@
 <meta property="og:image" content="http://yoursite.com/img/Python元组+字符串/4.png">
 <meta property="og:image" content="http://yoursite.com/img/Python元组+字符串/5.png">
 <meta property="og:image" content="http://yoursite.com/img/Python元组+字符串/6.png">
-<meta property="og:updated_time" content="2019-03-07T14:56:01.263Z">
+<meta property="og:image" content="http://yoursite.com/img/Python元组+字符串/9.png">
+<meta property="og:image" content="https://fishc.com.cn/forum.php?mod=viewthread&tid=38992&extra=page%3D1%26filter%3Dtypeid%26typeid%3D403">
+<meta property="og:updated_time" content="2019-03-09T03:06:41.321Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python元组+字符串">
 <meta name="twitter:description" content="本讲讲介绍元组及字符串的特征及操作等。">
@@ -407,7 +409,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  548
+                  838
                 </span>
               
 
@@ -423,7 +425,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  4
                 </span>
               
             </div>
@@ -471,7 +473,20 @@
 </li>
 </ul>
 <h2 id="2-字符串的方法及注释"><a href="#2-字符串的方法及注释" class="headerlink" title="2.字符串的方法及注释"></a>2.字符串的方法及注释</h2><p><img src="https://fishc.com.cn/forum.php?mod=viewthread&amp;tid=38992&amp;extra=page%3D1%26filter%3Dtypeid%26typeid%3D403" alt="字符串的方法及注释"></p>
-<h1 id="三、小练习-字符串"><a href="#三、小练习-字符串" class="headerlink" title="三、小练习-字符串"></a>三、小练习-字符串</h1><p><img src="/img/Python元组+字符串/2.png" alt="2"><br><img src="/img/Python元组+字符串/3.png" alt="3"><br><img src="/img/Python元组+字符串/4.png" alt="4"><br><img src="/img/Python元组+字符串/5.png" alt="5"><br><img src="/img/Python元组+字符串/6.png" alt="6"></p>
+<h1 id="三、小练习-字符串"><a href="#三、小练习-字符串" class="headerlink" title="三、小练习-字符串"></a>三、小练习-字符串</h1><p><img src="/img/Python元组+字符串/2.png" alt="2"><br><img src="/img/Python元组+字符串/3.png" alt="3"><br><img src="/img/Python元组+字符串/4.png" alt="4"><br><img src="/img/Python元组+字符串/5.png" alt="5"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="/img/Python元组+字符串/6.png" alt="6"></h2><h1 id="四、字符串格式化"><a href="#四、字符串格式化" class="headerlink" title="四、字符串格式化"></a>四、字符串格式化</h1><h2 id="1-位置参数"><a href="#1-位置参数" class="headerlink" title="1.位置参数"></a>1.位置参数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; &apos;&#123;0&#125; love &#123;1&#125;.&#123;2&#125;&apos;.format(&apos;I&apos;,&apos;fishc&apos;,&apos;com&apos;)</span><br><span class="line">&apos;I love fishc.com&apos;</span><br></pre></td></tr></table></figure>
+<h2 id="2-关键字参数"><a href="#2-关键字参数" class="headerlink" title="2.关键字参数"></a>2.关键字参数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; &apos;&#123;a&#125; love &#123;b&#125;.&#123;c&#125;&apos;.format(a = &apos;I&apos;,b = &apos;fishc&apos;,c = &apos;com&apos;)</span><br><span class="line">&apos;I love fishc.com&apos;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>若位置参数和关键字参数一起使用，位置参数要在关键字参数之前<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; &apos;&#123;0&#125; love &#123;b&#125;.&#123;c&#125;&apos;.format(&apos;I&apos;,b = &apos;fishc&apos;,c = &apos;com&apos;)</span><br><span class="line">&apos;I love fishc.com&apos;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-对花括号进行转义"><a href="#3-对花括号进行转义" class="headerlink" title="3.对花括号进行转义"></a>3.对花括号进行转义</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; &apos;&#123;&#123;0&#125;&#125;&apos;.format(&apos;asc&apos;)</span><br><span class="line">&apos;&#123;0&#125;&apos;</span><br></pre></td></tr></table></figure>
+<p>此时{0}已经不代表后面的位置了，而是单纯的{0}</p>
+<h2 id="4-格式化"><a href="#4-格式化" class="headerlink" title="4.格式化"></a>4.格式化</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; &apos;&#123;0:.1f&#125;&#123;1&#125;&apos;.format(27.658,&apos;GB&apos;)</span><br><span class="line">&apos;27.7GB&apos;</span><br><span class="line">&gt;&gt;&gt; &apos;&#123;0:.2f&#125;&#123;1&#125;&apos;.format(27.658,&apos;GB&apos;)</span><br><span class="line">&apos;27.66GB&apos;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>：格式化符号的开始<br>.1 四舍五入保留一位小数点<br>f 打印出定点数（浮点数），即打印出来一个小数<br><img src="/img/Python元组+字符串/9.png" alt="9"></li>
+</ul>
+<h2 id="5-各种格式化"><a href="#5-各种格式化" class="headerlink" title="5.各种格式化"></a>5.各种格式化</h2><p><img src="https://fishc.com.cn/forum.php?mod=viewthread&amp;tid=38992&amp;extra=page%3D1%26filter%3Dtypeid%26typeid%3D403" alt="字符串的各种格式化"></p>
 
       
     </div>
@@ -540,6 +555,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/09/Python的序列/" rel="prev" title="Python的序列">
+                Python的序列 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -621,7 +640,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -686,7 +705,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、元组-tuple"><span class="nav-number">1.</span> <span class="nav-text">一、元组(tuple)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-创建-访问一个元组"><span class="nav-number">1.1.</span> <span class="nav-text">1.创建+访问一个元组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-更新-删除一个元组"><span class="nav-number">1.2.</span> <span class="nav-text">2.更新+删除一个元组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-更新：用分片形式"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.更新：用分片形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-删除"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.删除</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-元组相关操作符"><span class="nav-number">1.3.</span> <span class="nav-text">3.元组相关操作符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、字符串及其内置方法"><span class="nav-number">2.</span> <span class="nav-text">二、字符串及其内置方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-字符串的操作"><span class="nav-number">2.1.</span> <span class="nav-text">1.字符串的操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-字符串的方法及注释"><span class="nav-number">2.2.</span> <span class="nav-text">2.字符串的方法及注释</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、小练习-字符串"><span class="nav-number">3.</span> <span class="nav-text">三、小练习-字符串</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、元组-tuple"><span class="nav-number">1.</span> <span class="nav-text">一、元组(tuple)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-创建-访问一个元组"><span class="nav-number">1.1.</span> <span class="nav-text">1.创建+访问一个元组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-更新-删除一个元组"><span class="nav-number">1.2.</span> <span class="nav-text">2.更新+删除一个元组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-更新：用分片形式"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.更新：用分片形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-删除"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.删除</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-元组相关操作符"><span class="nav-number">1.3.</span> <span class="nav-text">3.元组相关操作符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、字符串及其内置方法"><span class="nav-number">2.</span> <span class="nav-text">二、字符串及其内置方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-字符串的操作"><span class="nav-number">2.1.</span> <span class="nav-text">1.字符串的操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-字符串的方法及注释"><span class="nav-number">2.2.</span> <span class="nav-text">2.字符串的方法及注释</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、小练习-字符串"><span class="nav-number">3.</span> <span class="nav-text">三、小练习-字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">3.1.</span> <span class="nav-text"></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、字符串格式化"><span class="nav-number">4.</span> <span class="nav-text">四、字符串格式化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-位置参数"><span class="nav-number">4.1.</span> <span class="nav-text">1.位置参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-关键字参数"><span class="nav-number">4.2.</span> <span class="nav-text">2.关键字参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-对花括号进行转义"><span class="nav-number">4.3.</span> <span class="nav-text">3.对花括号进行转义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-格式化"><span class="nav-number">4.4.</span> <span class="nav-text">4.格式化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-各种格式化"><span class="nav-number">4.5.</span> <span class="nav-text">5.各种格式化</span></a></li></ol></li></ol></div>
             
 
           </div>
